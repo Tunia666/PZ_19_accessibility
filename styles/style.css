@@ -1,6 +1,121 @@
-* , *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; min-width: 320px; font-family: Arial, sans-serif; color: #171717; background: #f5f4ef; }
-a { color: inherit; }
-button, input, textarea, select { font: inherit; }
-body{max-width:1100px;margin:0 auto;padding:32px}.header{display:flex;justify-content:space-between;padding:24px;background:#171717;color:#fff}.header nav{display:flex;gap:20px}.hero{display:grid;grid-template-columns:220px 1fr;gap:40px;align-items:center;margin-top:32px;padding:48px;background:#d8ff55}.hero__image{width:100%}.hero__button{display:inline-block;padding:14px 20px;background:#171717;color:#fff}.book{margin-top:24px;padding:24px;border:1px solid #999}.book img{width:120px}a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:3px solid #6c5ce7;outline-offset:4px}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1100px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 32px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #171717;
+  background: #f5f4ef;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #6c5ce7;
+  outline-offset: 4px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  margin-bottom: 32px;
+  background: #171717;
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 32px;
+  margin-bottom: 32px;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 12px;
+}
+
+.hero__image {
+  width: 160px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.hero__button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 24px;
+  background: #6c5ce7;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero__button:hover {
+  background: #5649c0;
+}
+
+#books,
+#about {
+  margin-bottom: 32px;
+}
+
+.book {
+  max-width: 340px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 12px;
+}
+
+.book img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.book a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #5649c0;
+  font-weight: bold;
+}
